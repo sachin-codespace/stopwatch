@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #ee59b5;
+}
+
+.container {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(216, 212, 212);
+    box-shadow: 0 0 12px rgba(0, 0, 0, .4);
+    min-width: 30vw; 
+}
+
+h2 {
+    font-size: 2.4vw;
+    margin: 1vw;
+}
+
+.timer {
+    font-size: 3vw;
+    padding: 1vw;
+    background-color: #ffffff;
+    margin: 2vw 0;
+    border-radius: .4vw;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, .2);
+    animation: trans 1.05s infinite alternate;
+}
+
+@keyframes trans {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.02);
+    }
+}
+
+.units {
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    padding-top: .4vw;
+    width: 5vw;
+}
+
+.colon {
+    margin: 0 .4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: #ee48ae;
+    padding: .4vw;
+    font-size: 1.3vw;
+    border-radius: .4vw;
+    outline: none;
+    border: none;
+    padding: .4vw 1vw;
+    cursor: pointer;
+    margin: 1vw .2vw;
+}
+
+
+
+@media (max-width: 1300px) {
+    h2 {
+        font-size: 2.6vw;
+    }
+    
+    .timer {
+        font-size: 3vw;
+    }
+    
+    button {
+        font-size:2vw;
+        padding: 0.6vw 1.6vw;
+        margin: 1.6vw 0;
+    }
+}
+
+@media (max-width: 786px) {
+    h2 {
+        font-size: 3.4vw;
+    }
+    .container{
+       min-width: 50vw;
+       padding: 1vw 3vw;
+        
+    }
+    .timer {
+        font-size: 3.3vw;
+    }
+    
+    button {
+        font-size:2.5vw;
+        padding: 1vw 2vw;
+        margin: 1.6vw 0;
+    }
+}
+@media (max-width: 550px) {
+    h2 {
+        font-size: 5vw;
+        padding-bottom: 4vw;
+    }
+    .container{
+       min-width: 60vw;
+       padding: 1vw 2vw;
+        
+    }
+    .timer {
+        font-size: 4.6vw;
+    }
+    
+    button {
+        font-size:4vw;
+        padding: 1vw 1.6vw;
+        margin: 1.6vw 0;
+    }
+}
